@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <form action="">
-        <label for="A"></label>
-        <input type="number" id="valueOne" placeholder="input value" />
-      </form>
+    <div class="calculation">
+      <div>
+        <form action="">
+          <label for="A"></label>
+          <input type="number" id="num1" placeholder="input value" />
+        </form>
+      </div>
+      <div>
+        <form action="">
+          <label for="B"></label>
+          <input type="number" id="num2" placeholder="input value" />
+        </form>
+      </div>
+
+      <div class="btn">
+        <button type="submit" onclick="calcTwo(event)">ADD</button>
+
+        <button type="submit" onclick="calc(event)">EXPONTIATE</button>
+      </div>
+
+      <div id="result"></div>
     </div>
-    <div>
-      <form action="">
-        <label for="B"></label>
-        <input type="number" id="valueTwo" placeholder="input value" />
-      </form>
-    </div>
-    <button type="submit" onclick="calc(event)">Calculate</button>
 
     <!-- SCRIPT  -->
     <script src="main.js"></script>

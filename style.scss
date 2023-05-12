@@ -1,0 +1,76 @@
+@import "./components/colours";
+@import "./components/reset";
+@import "./components/typography";
+@import "./components/mediaqueries";
+
+
+@mixin kflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+body {
+
+  @media (max-width: $small) {
+    padding: 15px;
+  }
+
+  .calculation {
+    margin: 0 auto;
+    @include kflex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 3rem;
+    margin-top: 6rem;
+    width: 700px;
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 8rem;
+    position: relative;
+
+    @media (max-width: $small) {
+      width: 100%;
+    }
+
+    div {
+      form {
+        input {
+          border: black 1px solid;
+          padding: 1rem;
+          border-radius: 4px;
+          
+          @media (max-width: $small) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .btn {
+      @include kflex;
+      gap: 2rem;
+
+      @media (max-width: $small) {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 1rem;
+      }
+
+      button {
+        border: black 1px solid;
+        border-radius: 4px;
+        padding: 0.6rem 2rem;
+      }
+    }
+
+
+    #result {
+      position: absolute;
+      bottom: 3rem;
+    }
+  }
+
+}
+

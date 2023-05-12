@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+body {
+  background-color: #2a2a2c;
+}
+body .calculation {
+  background-color: #dcdcdc;
+}
+body .calculation div form input {
+  background-color: #f2f2f2;
+  color: #2a2a2c;
+}
+body .calculation div button {
+  background-color: #f2f2f2;
+}
+body .calculation #result {
+  color: #E93A7D;
+}
+
+/* INIT */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body .calculation div form input {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+body .calculation div button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+}
+body .calculation #result {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+}
+body .calculation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 3rem;
+  margin-top: 6rem;
+  width: 700px;
+  border: none;
+  border-radius: 10px;
+  padding-bottom: 8rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  body .calculation {
+    width: 100%;
+  }
+}
+body .calculation div form input {
+  border: black 1px solid;
+  padding: 1rem;
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+  body .calculation div form input {
+    width: 100%;
+  }
+}
+body .calculation .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  body .calculation .btn {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+}
+body .calculation .btn button {
+  border: black 1px solid;
+  border-radius: 4px;
+  padding: 0.6rem 2rem;
+}
+body .calculation #result {
+  position: absolute;
+  bottom: 3rem;
+}/*# sourceMappingURL=style.css.map */

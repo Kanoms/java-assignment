@@ -1,0 +1,36 @@
+$main-theme: #2a2a2c;
+$sec-theme: #f2f2f2;
+$res-col: #E93A7D;
+$grey-col: #dcdcdc;
+
+body {
+  background-color: $main-theme;
+
+  .calculation {
+
+    background-color: $grey-col;
+    div {
+      form {
+        input {
+          background-color: $sec-theme;
+          color: $main-theme;
+        }
+      }
+
+      button {
+        background-color: $sec-theme;
+      }
+    }
+
+    #result {
+      color: $res-col;
+    }
+  }
+}
+
+
+
+  
+
+
+
